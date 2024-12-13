@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head><title>Q7</title>
+	 <html>
+<head>
+<title>School Management System</title>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/
+bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.
+js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+	$("button").click(function(){
+	const name1=$("#name").val();
+	const age1=$("#age").val();
+        const sem1=$("#sem").val();
+	const redg1=$("#regn").val();
+	
+		$("tbody").append("<tr><td>"+name1+"</td><td>"+age1+"</td><td>"+sem1+"</td><td>"+redg1+"</td></tr>")
+		$("#name").val("");
+		$("#age").val("");
+		$("#sem").val("");
+		$("#regn").val("");
+	});
+	});
+</script>
+<style>
+	table,tr,td{
+		border: 2px solid black;
+		text-align:center;
+	}
+
+	table{
+		border-collapse:collapse;
+width:100%;
+
+	}
+input{
+text-align:center;
+}
+</style>
+
+
+</head>
+<body>
+	<div class="container">
+<div class="jumbotron">
+<h1 style="text-align:center;">Student Data Information</h1>
+<div class="container">
+<div class="jumbotron">
+	<lable for="name" >NAME</lable><br>
+	<input type="text" id="name" placeholder="Enter Name"><br>
+<lable for="regn"  >REGISTERATION NO</lable><br>
+	<input type="text" id="regn" placeholder="Enter registration no"><br>
+
+	<lable for="age" >AGE.</lable><br>
+	<input type="text" id="age" placeholder="Enter your age"><br>
+	<lable for="name"  >SEMESTER</lable><br>
+	<input type="text" id="sem" placeholder="Enter Your semester"><br>
+	
+	<button>INSERT</button><br><br>
+
+
+	<table>
+	<thead>
+		<tr>
+		<td>Name</td>
+		<td>Age</td>
+		<td>Semester</td>
+		<td>Registration number</td>
+		<td>Activities</td>
+		</tr>
+	</thead>
+<tbody>
+</tbody>
+	</table>
+
+
+	
+</div>
+</div>
+</body>
+</html>

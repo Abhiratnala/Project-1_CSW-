@@ -1,0 +1,8 @@
+<html>
+<head>
+<title>School Management System</title>
+</head>
+<body>
+<h1><i>School Management System<i></h1>
+</body>
+</html>
